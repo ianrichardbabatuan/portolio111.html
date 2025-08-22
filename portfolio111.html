@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLpI4+Xy6Q6C/1E/y1s5G9LzW5LzW6Z2v1w9+Lz5eA5I6Bv2B5w+jFv2B7fD1P9/y5B9P8e2fF+g1G2L+D2I4/t4oA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between">
+            <div class="text-2xl font-bold text-white">
+                <a href="#" class="hover:text-teal-400 transition-colors duration-300">Ian R.</a>
+            </div>
+            <nav class="mt-4 sm:mt-0">
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#about" class="hover:text-teal-400 transition-colors duration-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-teal-400 transition-colors duration-300">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-teal-400 transition-colors duration-300">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-teal-400 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <section id="about" class="bg-gray-800 p-8 rounded-2xl shadow-lg mb-12 border border-teal-400">
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <div class="w-48 h-48 rounded-full overflow-hidden mb-6 md:mb-0 shadow-lg border-4 border-teal-400">
+                    <img src="ian.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+                <div class="md:w-3/4 text-center md:text-left">
+                    <h2 class="text-4xl font-extrabold text-teal-400 mb-4">Hello, I'm Ian R.</h2>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        I am a passionate web developer with expertise in building dynamic and responsive websites. I love creating clean, efficient, and user-friendly applications. My skills include front-end technologies like HTML, CSS, JavaScript, and various frameworks. I'm always eager to learn new things and take on exciting challenges.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="border-gray-700 my-12">
+
+        <section id="skills" class="mb-12">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-8">My Skills</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="bg-gray-800 p-6 rounded-2xl text-center shadow-lg transform transition duration-300 hover:scale-110">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-2"></i>
+                    <p class="text-lg font-semibold text-gray-300">HTML5</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl text-center shadow-lg transform transition duration-300 hover:scale-110">
+                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-2"></i>
+                    <p class="text-lg font-semibold text-gray-300">CSS3</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl text-center shadow-lg transform transition duration-300 hover:scale-110">
+                    <i class="fab fa-js-square text-5xl text-yellow-500 mb-2"></i>
+                    <p class="text-lg font-semibold text-gray-300">JavaScript</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl text-center shadow-lg transform transition duration-300 hover:scale-110">
+                    <i class="fab fa-react text-5xl text-teal-400 mb-2"></i>
+                    <p class="text-lg font-semibold text-gray-300">React</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl text-center shadow-lg transform transition duration-300 hover:scale-110">
+                    <i class="fab fa-node-js text-5xl text-green-500 mb-2"></i>
+                    <p class="text-lg font-semibold text-gray-300">Node.js</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl text-center shadow-lg transform transition duration-300 hover:scale-110">
+                    <i class="fab fa-python text-5xl text-blue-400 mb-2"></i>
+                    <p class="text-lg font-semibold text-gray-300">Python</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-700 my-12">
+
+        <section id="projects" class="mb-12">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="html-5.png" alt="Project Image 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-teal-400 mb-2">HTML</h3>
+                        <p class="text-gray-400 mb-4">HTML, or Hypertext Markup Language, is the basic building block of the web and serves as the standard markup language for creating web pages. While it is fundamental, it is not simply "basic" in the sense of being simplistic or limited. Instead, its "basic" nature refers to its foundational role in defining the structure and content of web documents.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-xl hover:bg-teal-500 transition-colors duration-300">View Live</a>
+                            <a href="#" class="inline-block border border-gray-500 text-gray-300 font-semibold py-2 px-4 rounded-xl hover:bg-gray-700 transition-colors duration-300">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="css-3.png"Project Image 2 class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-teal-400 mb-2">CSS</h3>
+                        <p class="text-gray-400 mb-4">CSS, or Cascading Style Sheets, is a language used to control the visual presentation of HTML documents, making websites look good. Basic CSS involves selecting specific HTML elements and applying rules to them using a syntax of selector, property, and value.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-xl hover:bg-teal-500 transition-colors duration-300">View Live</a>
+                            <a href="#" class="inline-block border border-gray-500 text-gray-300 font-semibold py-2 px-4 rounded-xl hover:bg-gray-700 transition-colors duration-300">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="ianners.webp" alt="Project Image 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-teal-400 mb-2">WEB DEVELOPER</h3>
+                        <p class="text-gray-400 mb-4">Basic websites usually have simple business logic, and could be summed up in 3 actions: creating/editing/viewing information or content. Examples of these are usually personal blogs, microsites, contact pages for brand positioning,.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="inline-block bg-teal-600 text-white font-semibold py-2 px-4 rounded-xl hover:bg-teal-500 transition-colors duration-300">View Live</a>
+                            <a href="#" class="inline-block border border-gray-500 text-gray-300 font-semibold py-2 px-4 rounded-xl hover:bg-gray-700 transition-colors duration-300">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="border-gray-700 my-12">
+
+        <section id="contact" class="bg-gray-800 p-8 rounded-2xl shadow-lg mb-12 border border-teal-400">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-8">Get In Touch</h2>
+            <p class="text-center text-gray-300 mb-8">
+                I'm always open to new opportunities and collaborations. Feel free to send me a message!
+            </p>
+            <form action="#" method="POST" class="max-w-xl mx-auto space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-300 font-semibold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-teal-400">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-300 font-semibold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-teal-400">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-300 font-semibold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-teal-400"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-teal-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-teal-500 transform transition duration-300 hover:scale-105">Send Message</button>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+
+    ---
+<footer class="bg-gray-800 py-12 mt-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+            <h4 class="text-3xl font-extrabold text-white mb-2">Ian R.</h4>
+            <p class="text-gray-400">Web Developer & Designer</p>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-end space-y-6 md:space-y-0 md:space-x-8">
+            <div class="flex space-x-6 text-2xl">
+                <a href="https://github.com/yourusername" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <a href="#about" class="text-lg text-gray-400 hover:text-teal-400 transition-colors duration-300">
+                Back to Top <i class="fas fa-arrow-up ml-1"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 mt-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 Ian R. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>s
